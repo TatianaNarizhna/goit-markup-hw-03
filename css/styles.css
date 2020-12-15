@@ -1,0 +1,214 @@
+/* ++цвет основного текста  #212121; */
+/* ++вторичный текст серый <p>, мейл+тел #757575; */
+/*++ адрес прозрачность rgba(255, 255, 255, 0.6); */
+/* ++цвет основной надписи белый H1  #FFFFFF; */
+/* ++ акцент голубой #2196F3; */
+/* ++ вторичный темно-серый background  #2F303A; */
+/*  ++вторичный белый background (шапка) #FFFFFF; */
+/*  вторичный почти белый background #F5F4FA; */
+/*  ++основной background  бело-серый #E5E5E5; */
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --transparent-gray: rgba(255, 255, 255, 0.6);
+  --white-hero-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-background-wg: #e5e5e5;
+  --secondary-bgc-gray: #2f303a;
+  --secondary-bgc-white: #ffffff;
+  --secondary-bgc-halfwhite: #f5f4fa;
+}
+
+body {
+  background-color: var(--white-hero-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/* стилизация хедер */
+.header {
+  background-color: var(--white-hero-color);
+}
+
+/* Logo */
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+/* сброс точек в списке + margin/padding */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* навигация сайта, список контактов+span STUDIO */
+.site-nav .link,
+.logo-studio {
+  color: var(--primary-text-color);
+}
+
+.list .address {
+  color: var(--secondary-text-color);
+}
+
+.site-nav .link,
+.list .address {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.list .active:hover,
+.list .active:focus {
+  color: var(--accent-color);
+}
+
+.header .item {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--secondary-bgc-gray);
+}
+.hero .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--white-hero-color);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  outline: 2px solid red;
+}
+
+/* секция */
+
+.bgc {
+  background-color: var(--secondary-bgc-halfwhite);
+}
+
+.bgc-portfolio {
+  background-color: var(--white-hero-color);
+}
+.section-title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.features .section-list {
+  color: var(--primary-text-color);
+}
+
+.features .content {
+  color: var(--secondary-text-color);
+}
+
+.section .content-advantages {
+  line-height: 1.71;
+}
+
+.name,
+.proffesion {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.name {
+  font-weight: 500;
+}
+
+.proffesion {
+  font-weight: normal;
+}
+
+/* Button */
+.button {
+  background-color: var(--accent-color);
+  color: var(--white-hero-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.section .filter:hover,
+.section .filter:focus {
+  background-color: var(--accent-color);
+  color: var(--white-hero-color);
+}
+
+.list .filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.list .projects {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.list .filter-name {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* подчеркивание */
+a {
+  text-decoration: none;
+}
+
+/* footer */
+.footer {
+  background-color: var(--secondary-bgc-gray);
+}
+
+.footer .studio-logo {
+  color: var(--white-hero-color);
+}
+
+.footer .adress-footer {
+  color: var(--white-hero-color);
+  font-style: normal;
+}
+
+.footer .list-footer {
+  color: var(--transparent-gray);
+}
+
+.footer .adress-footer,
+.footer .list-footer {
+  line-height: 1.71;
+}
+
+.footer .list-footer:hover,
+.footer .list-footer:focus {
+  color: var(--accent-color);
+}
+
+/* geometry styles */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+}
