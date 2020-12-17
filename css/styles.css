@@ -18,6 +18,7 @@
   --secondary-bgc-gray: #2f303a;
   --secondary-bgc-white: #ffffff;
   --secondary-bgc-halfwhite: #f5f4fa;
+  --border: #ececec;
 }
 
 body {
@@ -115,6 +116,10 @@ body {
 
 .header .item {
   color: var(--accent-color);
+}
+
+.border {
+  border-bottom: var(--border);
 }
 
 /* Hero */
@@ -248,6 +253,28 @@ body {
 
 .proffesion {
   font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.img-studio {
+  margin-bottom: 30px;
+}
+
+/* портфолио - кнопки */
+.tip-line {
+  display: flex;
+  margin-bottom: 34px;
+}
+
+.tip-line.center {
+  justify-content: center;
+}
+.tip {
+  margin-right: 8px;
+}
+
+.tip:last-child {
+  margin-right: 0;
 }
 
 /* Button */
