@@ -139,7 +139,6 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  outline: 2px solid red;
 }
 
 /* секция */
@@ -412,7 +411,6 @@ a {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
 }
 
 .section {
