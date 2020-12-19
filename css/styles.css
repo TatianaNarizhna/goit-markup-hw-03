@@ -31,6 +31,17 @@ body {
   font-size: 14px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* подчеркивание */
+a {
+  text-decoration: none;
+}
+
 /* стилизация хедер */
 .header {
   background-color: var(--white-hero-color);
@@ -127,6 +138,11 @@ body {
 .hero {
   background-color: var(--secondary-bgc-gray);
   text-align: center;
+  padding-top: 200px;
+}
+
+.hero-padding {
+  padding-bottom: 200px;
 }
 
 /* main container for all project */
@@ -150,7 +166,6 @@ body {
 
 .bgc-portfolio {
   background-color: var(--white-hero-color);
-  margin-bottom: 94px;
 }
 .section-title {
   margin-top: 0;
@@ -224,14 +239,14 @@ body {
   margin-right: 0;
 }
 
-.box-img {
-  margin-bottom: 94px;
+.section.box-img {
+  padding-top: 0px;
+  padding-bottom: 94px;
 }
 
 /* секция 4 - наша комманда */
 .team-flex {
   display: flex;
-  padding-bottom: 94px;
 }
 .team {
   width: 270px;
@@ -253,13 +268,15 @@ body {
   font-weight: 500;
 }
 
-.proffesion {
-  font-weight: normal;
-  margin-bottom: 30px;
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
-.img-studio {
-  margin-bottom: 30px;
+.proffesion {
+  font-weight: normal;
 }
 
 /* портфолио - кнопки */
@@ -285,6 +302,7 @@ body {
   padding: 10px 32px;
   border-style: none;
   outline: none;
+  cursor: pointer;
 
   background-color: var(--accent-color);
   color: var(--white-hero-color);
@@ -307,6 +325,7 @@ body {
 .list .filter {
   border-radius: 4px;
   padding: 6px 22px;
+  cursor: pointer;
 
   font-weight: 500;
   font-size: 16px;
@@ -327,7 +346,7 @@ body {
 
 .list .filter-name {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 
   font-size: 16px;
   line-height: 1.87;
@@ -340,12 +359,9 @@ body {
 }
 
 .table-element {
-  width: calc((100%-2 * 30px) / 3);
+  width: calc((100% - 60px) / 3);
   margin-bottom: 30px;
-}
-
-.table-element {
-  border: 1px solid var(--portfolio-border);
+  margin-right: 30px;
 }
 
 .table-element:nth-child(3n) {
@@ -356,15 +372,15 @@ body {
   margin-bottom: 0;
 }
 
-/* сброс марджина в последнем списке - приложение(portfolio)- */
-.list .wo-mrg {
-  margin-bottom: 0;
+.card-content {
+  border: 1px solid var(--portfolio-border);
+  padding: 20px 24px;
 }
 
-/* подчеркивание */
-a {
-  text-decoration: none;
-}
+/* сброс марджина в последнем списке - приложение(portfolio)- */
+/* .list .wo-mrg {
+  margin-bottom: 0;
+} */
 
 /* footer */
 .footer {
@@ -379,6 +395,18 @@ a {
   color: var(--white-hero-color);
   font-style: normal;
   margin-bottom: 9px;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+}
+
+.logo-footer {
+  padding-top: 60px;
+}
+
+.footer-padding {
+  padding-bottom: 60px;
 }
 
 .footer .list-footer {
@@ -400,11 +428,6 @@ a {
   color: var(--accent-color);
 }
 
-.list > .item:nth-child(2n) {
-  margin-bottom: 60px;
-  display: inline-block;
-}
-
 /* geometry styles */
 .container {
   margin-left: auto;
@@ -416,18 +439,10 @@ a {
 
 .section {
   padding-top: 94px;
-  padding-bottom: 0;
+  padding-bottom: 94px;
 }
 
 .header .logo {
   margin-top: 24px;
   margin-bottom: 25px;
-}
-
-.footer .logo {
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-img {
-  margin-bottom: 20px;
 }
