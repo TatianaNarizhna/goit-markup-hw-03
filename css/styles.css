@@ -137,12 +137,15 @@ a {
 /* Hero */
 .hero {
   background-color: var(--secondary-bgc-gray);
-  text-align: center;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-padding {
-  padding-bottom: 200px;
+  width: 696px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* main container for all project */
@@ -291,8 +294,8 @@ a {
 
 .tip-line.center {
   justify-content: center;
-  height: 54px;
 }
+
 .tip {
   margin-right: 8px;
 }
@@ -402,7 +405,6 @@ a {
 .footer .adress-footer {
   color: var(--white-hero-color);
   font-style: normal;
-  margin-bottom: 9px;
 }
 
 .footer .logo {
@@ -421,11 +423,23 @@ a {
 .footer .list-footer {
   display: block;
   line-height: 1.71;
+}
+
+.footer .adress-footer {
   margin-bottom: 9px;
 }
-.list .zero-margin {
+
+.footer .item {
+  margin-bottom: 9px;
+}
+
+.footer .item:last-child {
   margin-bottom: 0;
 }
+
+/* .list .zero-margin {
+  margin-bottom: 0;
+} */
 
 .footer .list-footer:hover,
 .footer .list-footer:focus {
