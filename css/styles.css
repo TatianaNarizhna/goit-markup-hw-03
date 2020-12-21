@@ -365,6 +365,10 @@ a {
   flex-wrap: wrap;
 }
 
+.table-block {
+  display: block;
+}
+
 .table-element {
   width: calc((100% - 60px) / 3);
   margin-bottom: 30px;
@@ -461,6 +465,7 @@ a {
 }
 
 .header .logo {
+  display: block;
   padding-top: 24px;
   padding-bottom: 25px;
 }
